@@ -70,6 +70,14 @@ public class LinkedList {
     System.out.println("null");
   }
 
+  public void reverse(Node x){
+    Node node=head;
+    while(size!=0)
+      System.out.println(node.data);
+      node=node.next;
+    }
+  }
+
   public void getSize() {
     System.out.println(size);
   }
@@ -87,5 +95,7 @@ public class LinkedList {
     l.display();
     System.out.println();
     l.getSize();
+    l.reverse(0);
+    l.display();
   }
 }
